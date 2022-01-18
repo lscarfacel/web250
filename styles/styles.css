@@ -1,0 +1,39 @@
+body {
+    background: url(../images/zebra.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+aside {    
+    display: block;
+    background-color: rgb(48, 46, 46);
+    width: 400px;
+    margin: 0 0 0 10%;
+    color: aliceblue;
+    text-align: center;
+    padding: 2%;    
+}
+
+aside h1 {
+    
+    text-align: center;
+    margin-left: 35%;
+    width: 30%;
+    border-color: aliceblue;
+    border-style: solid;
+}
+
+a:link, a:visited {
+    position: inherit;
+    background-color: #8d0e05;
+    color: white;
+    padding: 3% 30%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+
+  a:hover, a:active {
+    background-color: rgb(238, 13, 13);
+  }
+  
