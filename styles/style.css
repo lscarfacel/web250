@@ -143,6 +143,11 @@ header #toggle
     color: rgb(226, 221, 221);
     font-size: 2em;
 }
+.content h3
+{
+    color: rgb(226, 221, 221);
+    margin: 10px;    
+}
 .content h2 span
 {
     color: #40c3ff;
