@@ -318,6 +318,13 @@ section{
       transition: 0.5s;
       transition-delay: 0.2s;
   }
+
+  .clockMenu
+  {
+      display: flex;
+      align-items: center;
+      margin: auto;
+  }
   /* Clock */
 .clock {
     width: 350px;
