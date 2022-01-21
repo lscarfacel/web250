@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">EM</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <section>
+            <aside class="toc">
+                <h1>CONTENTS</h1>
+                <ul>
+                    <li data-text="Contract"><a href='https://lscarfacel.github.io/web250/contract.html'>Contract</a></li>
+                    <li data-text="Introduction"><a href='https://lscarfacel.github.io/web250/introduction.html'>Introduction</a></li>
+                    <li data-text="Services"><a href='https://lscarfacel.github.io/web250/brand.html'>Brand</a></li>
+                </ul>
+            </aside>
+            <!-- Analog Clock -->
+            <div class="clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+                <div class="min">
+                    <div class="mn" id="mn"></div>
+                </div>
+                <div class="sec">
+                    <div class="SC" id="SC"></div>
+                </div>
+            </div>
+            <script src="scripts/script.js"></script>
+        </section>  
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/linkedin.png" alt="Linkedin"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/github.png" alt="Github"></a>
+            </li>
+            
+        </ul>
+        <ul class="valid">
+            <li>
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flscarfacel.github.io%2Fweb250%2F"><img src="images/html5.png" alt="w3c html5"></a>
+            </li>
+            <li>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flscarfacel.github.io%2Fweb250%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="images/css.png" alt="w3c css"></a>
+            </li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="https://lscarfacel.github.io/web250/">Home</a></li>
+            <li><a href="https://lscarfacel.github.io/web250/introduction">Introduction</a></li>
+            <li><a href="https://lscarfacel.github.io/web250/contract.html">Contract</a></li>
+            <!-- <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li> -->
+        </ul>
+    </div>
+    <ul>
+        
+    </ul>
+    <script>
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
