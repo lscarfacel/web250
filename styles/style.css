@@ -39,6 +39,11 @@ header #toggle
    height: 30px;
    cursor: pointer; 
 }
+
+.image 
+{
+    margin-left: 15%;
+}
 #toggle:before
 {
     content: '';
