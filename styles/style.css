@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=The+Nautigal:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 *
 {
     margin: 0;
@@ -15,22 +15,34 @@ header
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     padding: 40px 100px;
     z-index: 1000;
     transition: 0.6s;
 }
 .logo
 {
-    font-family: 'Arvo', serif;
-    font-family: 'The Nautigal', cursive;
-    position: relative;
-    font-weight: 700;
-    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 800;
+    color: #ff7b00;
+    text-shadow: 0px 0px 3px #000000;
     text-decoration: none;
-    font-size: 4em;
+    font-size: 3em;
     letter-spacing: 2px;
     transition: 0.6s;
+    display: block;
+    
+    
+}
+.catchphrase{
+    font-weight: 800;
+    color: #0ecfff;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    display: block;
+    margin: auto;
+    font-family: 'Arvo', serif;
 }
 header #toggle
 {
@@ -38,11 +50,6 @@ header #toggle
    width: 30px;
    height: 30px;
    cursor: pointer; 
-}
-
-.image 
-{
-    margin-left: 15%;
 }
 #toggle:before
 {
@@ -80,12 +87,22 @@ header #toggle
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    background: url(../images/zebra.png)no-repeat center center fixed;
+    background: url(../images/background.jpg)no-repeat center center fixed;
     background-size: cover;
     display: flex;
     align-items: center;
     transition: 0.5s;
     z-index: 2;
+}
+.banner .profileImg
+{
+    display: flex;
+    justify-content: center;
+    
+}
+.profileImg img 
+{
+    max-width: 250px;
 }
 .banner.active
 {
@@ -127,12 +144,15 @@ header #toggle
     text-transform: uppercase;
 }
 .content
-{
-    max-width: 700px;
+{  
+    display: block;
     background: rgba(0,0,0,0.7);
-    margin: 10px;
+    margin: auto;
     padding: 10px;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
+
 .content ul
 {
     margin-left: 55px;
@@ -175,94 +195,64 @@ header #toggle
 {
     position: relative;
     display: inline-block;
-    margin-top: 20px;
-    background: #fff;
-    color: #000;
-    padding: 10px 30px;
+    color: rgb(226, 221, 221);
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 500;
+   
 }
-.valid
-{   margin-top:400px;
+
+.sci 
+{
+    bottom: 1%;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 100px;
-    list-style: none;
+    display: inline-block;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    color: #ccc;
+    width: 89.8%;
 }
-.valid li a
+.sci img {
+    margin: 15px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.sci img:hover
 {
-    position: relative;
-    display: grid;
-    place-items: center;
-    margin: 10px 0 0;
-    text-decoration: none;
+    background: rgb(252, 0, 0) 50px;
+    
 }
-.valid li a:hover
-{
-    background: #fff;
-}
-.valid li a img
+.sci a img
 {
     filter: invert(1);
     max-width: 50px;
+    max-height: 50px;
+    padding: 5px;
+    
 }
-.sci
-{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 100px;
-    list-style: none;
-}
-
-.sci li a
-{
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fff;
-    margin: 10px 0 0;
-    text-decoration: none;
-}
-.sci li a:hover
-{
-    background: #fff;
-}
-.sci li a img
-{
-    filter: invert(1);
-    max-width: 25px;
-}
-
-/* Menu */
+/******************** Menu ********************/
 section{
     display: flex;
     flex-direction: row;
     gap: 100px;
     margin-top: auto;
   }
-  .toc h1{
-    
+.toc h1{    
     border: 5px solid #fff;
     text-align: center;
     margin-bottom: 10px;
     background: #2196f3;
     color: #fff;
   }
-  .toc ul 
+.toc ul 
   {
       position: relative;
       display: flex;
       flex-direction: column;
   }
-  .toc ul li {
+.toc ul li {
       list-style: none;
   }
-  .toc ul li:before{
+.toc ul li:before{
       content: attr(data-text);
       position: absolute;
       top: 50%;
@@ -277,11 +267,11 @@ section{
       transition: 0.5s;
       white-space: nowrap;
   }
-  .toc ul li:hover:before{
+.toc ul li:hover:before{
       opacity: 0.5;
       letter-spacing: 0px;
   }
-  .toc ul li a {
+.toc ul li a {
       position: relative;
       display: inline-block;
       padding: 6px 15px;
@@ -294,18 +284,16 @@ section{
       transition: 0.5s;
       z-index: 1;
   }
-  .toc ul:hover li a{
+.toc ul:hover li a{
       opacity: 0;
   }
-  
-  .toc ul li a:hover{
+.toc ul li a:hover{
       transform: scale(1.4);
       z-index: 1000;
       background: #ff3f81;
       opacity: 1;
   }
-  
-  .toc ul li a:before{
+.toc ul li a:before{
       content: '';
       position: absolute;
       top: 0;
@@ -317,14 +305,12 @@ section{
       transform: skewX(35deg);
       transition: 0s;
   }
-  
-  .toc ul li a:hover:before{
+.toc ul li a:hover:before{
       left: calc(100% + 100px);
       transition: 0.5s;
       transition-delay: 0.2s;
   }
-
-  .clockMenu
+.clockMenu
   {
       display: flex;
       align-items: center;
@@ -409,13 +395,75 @@ section{
     z-index: 12;
     border-radius: 6px 6px 0 0;
 }
-
+/******************* Brand Board style ***********************/
+.colorPalette
+{   
+    flex-direction: column;
+    row-gap: 2px;
+}
+.colorPalette ul
+{
+    list-style: none;
+    display: inline-flex;   
+}
+.colorPalette li
+{
+    border: 5px solid rgb(190, 238, 15);
+    width: 150px;
+    color: #15cc1f;
+    font-weight: 900;
+}
+#bColor1
+{
+    padding: 30px;
+    background-color: #ffffff;
+}
+#bColor2
+{
+    padding: 30px;
+    background-color: #eaa088; 
+}
+#bColor3
+{
+    padding: 30px;
+    background-color: #ececee;
+}
+#bColor4
+{
+    padding: 30px;
+    background-color: #505050;
+}
+#fColor1
+{
+    padding: 30px;
+    background-color: #e92e00;
+}
+#fColor2
+{
+    padding: 30px;
+    background-color: #ffffff;
+}
+#fColor3
+{
+    padding: 30px;
+    background-color: #000000;
+}
+  /**************** Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other *********************/
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
 
 /* .short-text { display: none; } */
-@media (max-width: 858px)
+@media (max-width: 950px)
 {   
     /* .short-text { display: inline-block; }
     .full-text { display: none; } */
+    .logo img {
+        max-width: 40%;
+    }
     header
     {
         padding: 20px 50px;
@@ -423,6 +471,10 @@ section{
     .banner
     {
         padding: 100px 50px 150px;
+    }
+    .banner .profileImg img
+    {
+       display: none;
     }
     .banner h2 
     {
@@ -449,26 +501,8 @@ section{
     .sci 
     {
         position: absolute;
-        bottom: 50px;
-        right: initial;
-        flex-direction: row;
+        bottom: 0;   
     }
-    .sci li a 
-    {
-        margin: initial;
-        margin-right: 10px;
-    }
-    .valid
-    {
-        position: absolute;
-        bottom: 50px;
-        right: initial;
-        flex-direction: row;
-        margin-left: 180px;
-    }
-    .valid li a 
-    {
-        margin: initial;
-        margin-left: 15px;
-    }
+    
+    
 }
