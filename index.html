@@ -4,77 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction</title>
+    <title>Enmanuel Marte > WEB250 > Table Of Content</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <section class="banner" id="sec">
-        <header>
-            <a href="#" class="logo">EM</a>
-            <div id="toggle" onclick="toggle()"></div>
-        </header>
-        <div class="content">
-            <h2>Hello WEB 250, <br>I'm <span>Enmanuel Marte</span></h2>
-            <p><b>Personal Background:</b> I moved form the Dominican Republic to Charlotte North Carolina in 2009. I have been studying and working since. </p>
-        	<p><b>Professional Background:</b> I been working part-time and doing side gigs. I have opened two companies one got sold and the other one I kind of retired from.
-                Side gigs: Business start-up assistant, Notary Public, WP developer, Graphics design, Photography, Auto sales, Construction, Spanish & small business startup Tutor.</p>
-	        <p><b>Academic Background:</b> Graduated from POB academy of technology in 2010, Automobile Technology 2014, IT business Analysis AAS 2020, IT Full Stack Programming AAS 2022.</p>
-        	<p><b>Primary Computer Platform:</b> Windows 10</p>
-            <h3>Courses I'm Taking, & Why:</h3>
-        	<ul>
-            	<li>CSC221-N801: Advanced Python Programming. Required</li>
-            	<li>CSC151-H113: JAVA Programming. Required</li>
-            	<li>WEB250-N801: Database Driven Websites. Required</li> 
-            	<li>WEB215-N801: Adv Markup and Scripting. Required</li>
-            </ul>
-        	<p><b>Funny/Interesting item about yourself:</b> People think I am 22 for some reason I don’t see. I guess its good.</p>
-                <p><b>I'd Also Like to Share:</b> I will be planting a lot of vegetables this year. So free veggies for everyone! </p>
-
-                <a href="#">Know More</a>
-        </div>
-        <ul class="sci">
-            <li>
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/linkedin.png" alt="Linkedin"></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/github.png" alt="Github"></a>
-            </li>
-            
-        </ul>
-        <ul class="valid">
-            <li>
-                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flscarfacel.github.io%2Fweb250%2F"><img src="images/html5.png" alt="w3c html5"></a>
-            </li>
-            <li>
-                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flscarfacel.github.io%2Fweb250%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="images/css.png" alt="w3c css"></a>
-            </li>
-        </ul>
-    </section>
-    <div id="navigation">
-        <ul>
-            <li><a href="https://lscarfacel.github.io/web250/">Home</a></li>
-            <li><a href="https://lscarfacel.github.io/web250/introduction">Introduction</a></li>
-            <li><a href="https://lscarfacel.github.io/web250/contract.html">Contract</a></li>
-            <!-- <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li> -->
-        </ul>
-    </div>
-    <ul>
-        
-    </ul>
-    <script>
-        function toggle(){
-            var sec = document.getElementById('sec');
-            var nav = document.getElementById('navigation');
-            sec.classList.toggle('active');
-            nav.classList.toggle('active');
-        }
-    </script>
+    <main class="banner" id="sec">
+        <!-- header includes logo and menu -->
+        <div data-include="components/header.html"></div>
+        <section class="clockMenu">
+            <aside class="toc">
+                <h1>CONTENTS</h1>
+                <ul>
+                    <li data-text="Contract"><a href='https://lscarfacel.github.io/web215/contract.html'>Contract</a></li>
+                    <li data-text="Introduction"><a href='https://lscarfacel.github.io/web215/introduction.html'>Introduction</a></li>
+                    <li data-text="Services"><a href='https://lscarfacel.github.io/web215/brandguide.html'>Brand Guide</a></li>
+                    <li data-text="Intro Form"><a href='https://lscarfacel.github.io/web215/introduction_form.html'>Intro Form</a></li>
+                    
+                </ul>
+            </aside>
+            <!-- Analog Clock -->
+            <div class="clock">
+                <div class="hour">
+                    <div class="hr" id="hr"></div>
+                </div>
+                <div class="min">
+                    <div class="mn" id="mn"></div>
+                </div>
+                <div class="sec">
+                    <div class="SC" id="SC"></div>
+                </div>
+            </div>
+            <script src="scripts/script.js"></script>
+        </section>  
+ 
+        <!--Footer -->
+        <div data-include="components/footer.html"></div>
+    </main>
+        <!-- Navigation Menu -->
+        <div data-include="components/nav.html"></div>
+        <!-- scripts -->
+        <script src="scripts/htmlinclude.js"></script>
+  
 </body>
 </html>
