@@ -416,7 +416,7 @@ section{
 #bColor1
 {
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #323435;
 }
 #bColor2
 {
@@ -436,18 +436,14 @@ section{
 #fColor1
 {
     padding: 30px;
-    background-color: #e92e00;
+    background-color: #0ecfff;
 }
 #fColor2
 {
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #e2dddd;
 }
-#fColor3
-{
-    padding: 30px;
-    background-color: #000000;
-}
+
   /**************** Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other *********************/
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {
