@@ -1,65 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contract</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-    <section class="banner" id="sec">
-        <header>
-            <a href="#" class="logo">EM</a>
-            <div id="toggle" onclick="toggle()"></div>
-        </header>
-        <div class="content">
-            <h2>Contract, <br><span>Enmanuel Marte</span></h2>
-            <p>I, Enmanuel Marte agree to abide by the terms in my Spring of 2022 WEB250, Database Driven Websites with my instructor, D.I von Briesen.
-
-                I understand that all work I do on my school and personal websites will be publicly available to the world. <br>I will not put infomation thare that is inappropriate for schoolwork, or that I wish to keep private.
-                
-                I also understand that it is my work that counts for attendeance, not logins or showing up for class. As such, failure to turn in assignments may show as an absences.
-            </p>
-                <p>Signed: <span>Enmanuel Marte</span> 1/17/2022</p>
-                
-        </div>
-        <ul class="sci">
-            <li>
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/linkedin.png" alt="Linkedin"></a>
-            </li>
-            <li>
-                <a href="#"><img src="images/github.png" alt="Github"></a>
-            </li>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enmanuel Marte WEB250 Contract</title>
+        <link rel="stylesheet" href="styles/style.css">
+         
+    </head>
+    <body>
+        <main class="banner" id="sec">
+            <!-- header includes logo and menu -->
+            <div data-include="components/header.html"></div>
             
-        </ul>
-        <ul class="valid">
-            <li>
-                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flscarfacel.github.io%2Fweb250%2Fcontract.html"><img src="images/html5.png" alt="w3c html5"></a>
-            </li>
-            <li>
-                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flscarfacel.github.io%2Fweb250%2Fcontract.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en"><img src="images/css.png" alt="w3c css"></a>
-            </li>
-        </ul>
-    </section>
-    <div id="navigation">
-        <ul>
-            <li><a href="https://lscarfacel.github.io/web250/">Home</a></li>
-            <li><a href="https://lscarfacel.github.io/web250/introduction">Introduction</a></li>
-            <li><a href="https://lscarfacel.github.io/web250/contract.html">Contract</a></li>
-            <!-- <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li> -->
-        </ul>
-    </div>
-    <ul>
+            <!-- content of the page -->
+            <div class="content">
+                <h2>Contract, <br><span>Enmanuel Marte</span></h2>
+                <p>I, <a href="">Enmanuel Marte</a> agree to abide by the terms in my Spring of 2022WEB250, Database Driven Websites class with my instructor, Professor D.I. von Briesen.
+                    I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private.<br>
+                    I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences.</p>
+                    <p>                 
+                    Signed: <span>Enmanuel Marte </span> <date> 1/17/2022</date>
+                </p>
+            </div>
+        <!--Footer -->
         
-    </ul>
-    
-</body>
+        <div data-include="components/footer.html"></div>
+        </main>
+        <!-- Navigation Menu -->
+        <div data-include="components/nav.html"></div>
+        <!-- scripts -->
+        <script src="scripts/htmlinclude.js"></script>
+    </body>
 </html>
