@@ -23,7 +23,7 @@ header
 {
     font-family: 'Orbitron', sans-serif;
     font-weight: 800;
-    color: #ff7b00;
+    color: #0ecfff;
     text-shadow: 0px 0px 3px #000000;
     text-decoration: none;
     font-size: 3em;
@@ -87,7 +87,7 @@ header #toggle
     width: 100%;
     min-height: 100vh;
     padding: 100px;
-    background: url(../images/background.jpg)no-repeat center center fixed;
+    background: url(../images/zebra.png)no-repeat center center fixed;
     background-size: cover;
     display: flex;
     align-items: center;
